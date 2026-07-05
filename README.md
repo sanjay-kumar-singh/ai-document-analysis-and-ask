@@ -1,4 +1,4 @@
-# Document Analysis Project
+# AI document question-answering
 
 This project provides a full-stack document question-answering experience. A React frontend lets users upload documents and ask questions, while an Express backend parses uploaded files and uses a local Ollama model to generate answers.
 
