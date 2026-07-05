@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document QA App</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.5; }
+    form { margin-top: 1rem; }
+    input, textarea, button { display: block; margin-top: 0.5rem; padding: 0.6rem; width: 100%; max-width: 480px; }
+    button { cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Document QA App</h1>
+  <p>Upload a document and ask a question about it.</p>
+
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="file">Upload document</label>
+    <input id="file" name="file" type="file" />
+    <button type="submit">Upload</button>
+  </form>
+
+  <form action="/ask" method="post">
+    <label for="question">Question</label>
+    <textarea id="question" name="question" rows="4" placeholder="Ask a question about the uploaded document"></textarea>
+    <button type="submit">Ask</button>
+  </form>
+</body>
+</html>
